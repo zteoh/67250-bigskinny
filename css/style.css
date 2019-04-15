@@ -1,0 +1,435 @@
+/*Overall Things*/
+
+img {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+h2 {
+    color: #ff6600;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-style: italic;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.75em;
+    line-height:normal;
+}
+
+.paragraph {
+    margin: auto;
+    padding: 0 10%;
+}
+
+/*Navigation Bar*/
+#navigation {
+    width: 100%;
+    position: absolute;
+    background: #ff6600;
+    color: white;
+    padding-left: 50px;
+}
+
+#navigation h3 {
+    width: 30%;
+    float: left;
+}
+
+#navigation a {
+    color: white;
+}
+
+#navigation .nav-link.active {
+    background: #ff6600;
+}
+
+/*Landing Page*/
+[id$=landing] {
+    position: relative;
+}
+
+#landing img {
+    min-height: 20vh;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+#main-landing img {
+    min-height: 60vh;
+    max-height: 90vh;
+    object-fit: cover;
+}
+
+#mid-landing img {
+    min-height: 10vh;
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+[id$=landing] h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00a665;
+}
+
+/*Video*/
+#video iframe {
+    height: 80vh;
+}
+
+/*Content*/
+.content {
+    /*    width: 100%;*/
+    padding:50px 0px 20px 0px;
+}
+
+/*Image fills the parent div*/
+.content img {
+    object-fit: cover;
+    /*    min-width: 100%;*/
+    min-height: 100%
+}
+
+/*Best Selling*/
+#best-selling {
+    text-align: center;
+}
+
+#best-selling img {
+    padding: 0px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/*Award*/
+#award {
+    text-align: center;
+}
+
+#award img {
+    margin: 20px 10%;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#award h4 {
+    text-align: left;
+    margin: 0px 10%;
+}
+
+/*Press*/
+#press {
+    text-align: right;
+}
+
+/*Menu Page*/
+.sub-category {
+    margin: 20px 0px;
+    color: #00a665;
+    font-weight: bold;
+}
+
+.sub-category-item {
+    margin: 0px 20px;
+    color: black;
+    font-weight: normal;
+}
+
+.nav-pills .nav-link.active{
+    background: #00a665;
+}
+
+.nav-pills a {
+    color: #00a665;
+}
+
+/*Forms*/
+form h4 {
+    color: #00a665;
+}
+
+/*iframe*/
+iframe {
+    width: 100%;
+}
+
+/*Table for contact.html*/
+table {
+    width: 100%;
+}
+
+th {
+    vertical-align: middle;
+    font-weight: 500;
+    color: #00a665;
+}
+
+/*Gallery*/
+
+#galleryThumbnail {
+    width: 25%;
+    float: left;
+}
+
+#galleryThumbnail img {
+    border-radius: 50%;
+    padding: 5%;
+}
+
+/*Footer*/
+footer {
+    background: #00a665;
+    color: white;
+    width: 100%;
+    padding: 30px 50px;
+}
+
+footer img {
+    min-width: 60px;
+    width: 100%;
+    padding: 0px 15%;
+}
+
+#link img {
+    width: 30%;
+    padding: 10px;
+    /*    width: 100%;*/
+    /*    padding: 0px 50px;*/
+}
+
+/*Small Screen Things*/
+@media screen and (max-width: 575px) {
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    h2 {
+        color: #00a665;
+        font-size: 1.25em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 0.875em;
+        font-weight:400;
+    }
+
+    h6 {
+        text-align: center;
+        font-size: 0.75em;
+    }
+
+    p {
+        font-size: 0.75em;
+        line-height:normal;
+    }
+
+    .hidden-small {
+        display: none;
+    }
+
+    .content {
+        padding:5px 0px 10px 0px;
+    }
+
+    .paragraph {
+        margin: auto;
+        padding: 0;
+    }
+
+    /*Navigation Bar*/
+    #navigation {
+        padding-left: 10px;
+    }
+
+    #navigation h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #navigation .nav {
+        justify-content:center !important;
+        width: 100%;
+    }
+
+    #navigation a {
+        font-size: 0.75em;
+        color: white;
+    }
+
+    /* Awards Section*/
+    #award {
+        text-align: left;
+    }
+
+    #award h4 {
+        margin: 0px;
+    }
+
+    /*Home Screen Best Selling*/
+    #best-selling {
+        text-align: left;
+    }
+    #best-selling img {
+        margin: 0;
+        width : 80px;
+        height: 80px;
+    }
+
+    #best-selling h2 {
+        margin-bottom: 20px;
+    }
+
+    /*Menu Page*/
+    .sub-category {
+        margin: 10px 0px;
+        color: #00a665;
+        font-weight: 700;
+    }
+
+    .sub-category-item {
+        margin: 0px 20px;
+        color: black;
+        font-weight: 400;
+        font-size: 0.875em;
+    }
+
+    .nav-pills .nav-link.active{
+        background: #00a665;
+    }
+
+    .nav-pills a {
+        color: #00a665;
+        font-size: 0.875em;
+    }
+
+    /*Events*/
+    #v-pills-tab {
+        margin-bottom: 30px;
+    }
+
+    /*Gallery*/
+
+    #galleryThumbnail {
+        width: 30%;
+        float: left;
+    }
+
+    #galleryThumbnail img {
+        border-radius: 50%;
+        padding: 5%;
+    }
+
+}
+
+/*Tablet Screen Things*/
+@media screen and (max-width: 768px) {
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        color: #00a665;
+        font-size: 1.25em;
+    }
+
+    h4 {
+        padding-top: 15px;
+        font-size: 0.875em;
+        font-weight:400;
+    }
+
+    h6 {
+        text-align: center;
+        font-size: 0.75em;
+    }
+
+    p {
+        font-size: 0.75em;
+        line-height:normal;
+    }
+
+    .content {
+        padding:5px 0px 10px 0px;
+    }
+
+    /*Navigation Bar*/
+    #navigation {
+        padding-left: 10px;
+    }
+
+    #navigation h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #navigation .nav {
+        justify-content:center !important;
+        width: 100%;
+    }
+
+    #navigation a {
+        font-size: 0.875em;
+        color: white;
+    }
+
+    /*Home Screen Best Selling*/
+    #best-selling {
+        text-align: left;
+    }
+    #best-selling img {
+        margin: 0;
+        width : 120px;
+        height: 120px;
+    }
+
+    #best-selling h2 {
+        margin-bottom: 20px;
+    }
+
+    /* Awards Section*/
+    #award {
+        text-align: left;
+    }
+
+    #award h4 {
+        margin: 0px;
+    }
+
+    #award img {
+        width: 25%;
+        float: left;
+        margin: 0px 20px 0px 0px;
+        padding: 10px 0px;
+    }
+
+    /*Footer*/
+    #link {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #link img {
+        width: 15%;
+    }
+}
