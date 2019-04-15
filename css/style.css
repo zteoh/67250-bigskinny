@@ -2,11 +2,11 @@
 
 img {
     width: 100%;
-    padding: 20px 0px;
+/*    padding: 20px 0px;*/
 }
 
 h2 {
-    color: #ff6600;
+    color: #ff8839;
     font-size: 1.5em;
 }
 
@@ -29,35 +29,45 @@ p {
 }
 
 /*Navigation Bar*/
+
+/*Primary Navigation*/
 #navigation {
     width: 100%;
-    position: absolute;
-    background: #ff6600;
-    color: white;
-    padding-left: 50px;
+    background: #ff8839;
+    color: #fff;
+    padding: 0px 10%;
 }
 
-#navigation h3 {
-    width: 30%;
-    float: left;
+#navigation h2{
+    color: #fff;
 }
 
-#navigation a {
-    color: white;
+
+/*Secondary Navigation*/
+#secondary-navigation {
+    background: #FFE8D1;
+}
+.nav-link.active {
+    background: #dd6600;
 }
 
-#navigation .nav-link.active {
-    background: #ff6600;
+.nav-pills .nav-link.active{
+    background: #ff8839;
+}
+
+.nav-pills a {
+    color: #ff8839;
 }
 
 /*Landing Page*/
 [id$=landing] {
+/*    margin-top:50px;*/
     position: relative;
 }
 
 #landing img {
-    min-height: 20vh;
-    max-height: 50vh;
+    min-height: 30vh;
+    max-height: 60vh;
     object-fit: cover;
 }
 
@@ -78,7 +88,13 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #00a665;
+    color: #ff8839;
+}
+
+/*Footer*/
+
+footer .nav-pills a {
+    color: #fff;
 }
 
 /*Video*/
@@ -149,17 +165,9 @@ p {
     font-weight: normal;
 }
 
-.nav-pills .nav-link.active{
-    background: #00a665;
-}
-
-.nav-pills a {
-    color: #00a665;
-}
-
 /*Forms*/
 form h4 {
-    color: #00a665;
+    color: #ff8839;
 }
 
 /*iframe*/
@@ -175,7 +183,7 @@ table {
 th {
     vertical-align: middle;
     font-weight: 500;
-    color: #00a665;
+    color: #ff8839;
 }
 
 /*Gallery*/
@@ -192,7 +200,7 @@ th {
 
 /*Footer*/
 footer {
-    background: #00a665;
+    background: #ff8839;
     color: white;
     width: 100%;
     padding: 30px 50px;
@@ -211,6 +219,14 @@ footer img {
     /*    padding: 0px 50px;*/
 }
 
+/*Big Screen Things*/
+@media screen and (min-width: 992px) {
+    #hidden-navigation{
+        position: absolute;
+        right:0;
+    }
+}
+
 /*Small Screen Things*/
 @media screen and (max-width: 575px) {
     h1 {
@@ -220,7 +236,7 @@ footer img {
     }
 
     h2 {
-        color: #00a665;
+/*        color: #ff8839;*/
         font-size: 1.25em;
     }
 
@@ -302,7 +318,7 @@ footer img {
     /*Menu Page*/
     .sub-category {
         margin: 10px 0px;
-        color: #00a665;
+        color: #ff8839;
         font-weight: 700;
     }
 
@@ -314,11 +330,11 @@ footer img {
     }
 
     .nav-pills .nav-link.active{
-        background: #00a665;
+        background: #ffaa00;
     }
 
     .nav-pills a {
-        color: #00a665;
+        color: #ff8839;
         font-size: 0.875em;
     }
 
@@ -349,7 +365,7 @@ footer img {
     }
 
     h2 {
-        color: #00a665;
+/*        color: #ff8839;*/
         font-size: 1.25em;
     }
 
