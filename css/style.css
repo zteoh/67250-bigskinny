@@ -155,7 +155,7 @@ footer .nav-pills a {
 /*Menu Page*/
 .sub-category {
     margin: 20px 0px;
-    color: #00a665;
+    color: #F3646D;
     font-weight: bold;
 }
 
@@ -163,6 +163,7 @@ footer .nav-pills a {
     margin: 0px 20px;
     color: black;
     font-weight: normal;
+/*    text-align: center;*/
 }
 
 /*Forms*/
@@ -448,4 +449,41 @@ footer img {
     #link img {
         width: 15%;
     }
+}
+
+/*Stars*/
+
+.checked {
+  color: orange;
+}
+
+/*Color Blocks*/
+
+.color-blocks {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    
+}
+
+.color-block {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.block-color-1 {
+    background-color: red;
+}
+
+.block-color-2 {
+    background-color: yellow;
+}
+
+.block-color-3 {
+    background-color: greenyellow;
+}
+
+.block-color-4 {
+    background-color: darkgrey;
 }
