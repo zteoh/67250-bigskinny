@@ -11,6 +11,65 @@
         <!-- Internal CSS and Javascript -->
         <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
 
+        <!-- Start of Async Drift Code -->
+        <!--
+<script>
+"use strict";
+
+!function() {
+var t = window.driftt = window.drift = window.driftt || [];
+if (!t.init) {
+if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+t.factory = function(e) {
+return function() {
+var n = Array.prototype.slice.call(arguments);
+return n.unshift(e), t.push(n), t;
+};
+}, t.methods.forEach(function(e) {
+t[e] = t.factory(e);
+}), t.load = function(t) {
+var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+var i = document.getElementsByTagName("script")[0];
+i.parentNode.insertBefore(o, i);
+};
+}
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('ax5swp4rckff');
+</script>
+-->
+        <!-- End of Async Drift Code -->
+
+        <script>
+            "use strict";
+
+            !function() {
+                var t = window.driftt = window.drift = window.driftt || [];
+                if (!t.init) {
+                    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+                        t.factory = function(e) {
+                        return function() {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function(e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function(t) {
+                        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+                }
+            }();
+            drift.SNIPPET_VERSION = '0.3.1';
+            drift.load('3sb4y7xe5pb5');
+        </script>
+
+
         <title>Big Skinny</title>
     </head>
 
@@ -68,6 +127,7 @@
 
         <div class="container">
             <div class="content">
+
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
                         <h2>Small and Flexible</h2>
@@ -120,7 +180,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="content" id="press">
                 <div class="row">
                     <div class="col-12 col-sm-5 paragraph">
@@ -128,13 +188,13 @@
                         <h4 style="font-style:italic;">“A simple idea that simply works - great idea, great wallet!”</h4>
                         <a href="www.driverhealth.org" target="_blank"><h4>- Driver Health</h4></a>
                     </div>
-                    
+
                     <div class="col-12 col-sm-7">
                         <img src="images/press.jpg">
                     </div>
                 </div>
             </div>
-            
+
             <div class="content">
                 <div class="row">
                     <div class="col-12" id="video">
@@ -142,9 +202,9 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
-        
+
         <div id="landing">
 
             <img src="images/prompt.jpg">
