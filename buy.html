@@ -30,15 +30,16 @@
 
                 <div class="collapse navbar-collapse" id="hidden-navigation">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buy.html">Account</a>
+                        </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Shop</a>
+                            <a class="nav-link" href="buy.html">Cart</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Account</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cart</a>
-                        </li>
+
                     </ul>
                 </div>
             </nav>
@@ -47,16 +48,19 @@
         <div id="secondary-navigation">
             <ul class="nav nav-pills justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Wallet</a>
+                    <a class="nav-link" href="shop.html">Men's Wallet</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Card Case</a>
+                    <a class="nav-link" href="shop.html">Women's Wallet</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Money Clip</a>
+                    <a class="nav-link" href="shop.html">Card Case</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Accessories</a>
+                    <a class="nav-link" href="shop.html">Money Clip</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Accessories</a>
                 </li>
             </ul>
         </div>
@@ -74,8 +78,30 @@
                 <form class="form-wrapper">
                     <fieldset class="section is-active">
                         <h3>Your Cart</h3>
-                        <input type="text" name="name" id="name" placeholder="Name">
-                        <input type="text" name="email" id="email" placeholder="Email">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Number</th>
+                                    <th>Item</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Metro Bi-Fold Wallet<br>Color: Black</td>
+                                    <td>2</td>
+                                    <td>$40.00<br>($20.00 x 2)</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Stretchy Bi-Fold Wallet<br>Color: Brown</td>
+                                    <td>1</td>
+                                    <td>$20.00<br>($20.00 x 1)</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <div class="button">Next</div>
                     </fieldset>
                     <fieldset class="section">
@@ -84,17 +110,17 @@
                             <div class="four col">
                                 <input type="radio" name="r1" id="r1" checked>
                                 <label for="r1">
-                                    <h4>Designer</h4>
+                                    <h4>Debit</h4>
                                 </label>
                             </div>
                             <div class="four col">
                                 <input type="radio" name="r1" id="r2"><label for="r2">
-                                <h4>Developer</h4>
+                                <h4>Credit</h4>
                                 </label>
                             </div>
                             <div class="four col">
                                 <input type="radio" name="r1" id="r3"><label for="r3">
-                                <h4>Project Manager</h4>
+                                <h4>Gift Card</h4>
                                 </label>
                             </div>
                         </div>
