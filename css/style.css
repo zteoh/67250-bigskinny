@@ -1,12 +1,16 @@
 /*Overall Things*/
 
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
 img {
     width: 100%;
 /*    padding: 20px 0px;*/
 }
 
 h2 {
-    color: #ff8839;
+    color: #a8d275;
     font-size: 1.5em;
 }
 
@@ -31,9 +35,14 @@ p {
 /*Navigation Bar*/
 
 /*Primary Navigation*/
+
+#navigation img {
+    width: 100px;
+}
+
 #navigation {
     width: 100%;
-    background: #ff8839;
+    background: #3c627d;
     color: #fff;
     padding: 0px 10%;
 }
@@ -45,18 +54,18 @@ p {
 
 /*Secondary Navigation*/
 #secondary-navigation {
-    background: #FFE8D1;
+    background: #7da2bd;
 }
 .nav-link.active {
     background: #dd6600;
 }
 
 .nav-pills .nav-link.active{
-    background: #ff8839;
+    background: #3C627D;
 }
 
 .nav-pills a {
-    color: #ff8839;
+    color: #3C627D;
 }
 
 /*Landing Page*/
@@ -88,7 +97,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ff8839;
+    color: #a8d275;
 }
 
 /*Footer*/
@@ -168,7 +177,7 @@ footer .nav-pills a {
 
 /*Forms*/
 form h4 {
-    color: #ff8839;
+    color: #a8d275;
 }
 
 /*iframe*/
@@ -176,15 +185,17 @@ iframe {
     width: 100%;
 }
 
-/*Table for contact.html*/
+/*Table for buy.html*/
 table {
     width: 100%;
+    text-align: left;
 }
 
 th {
-    vertical-align: middle;
+    vertical-align: top;
     font-weight: 500;
-    color: #ff8839;
+    color: #a8d275;
+    height: 2em;
 }
 
 /*Gallery*/
@@ -201,7 +212,7 @@ th {
 
 /*Footer*/
 footer {
-    background: #ff8839;
+    background: #3C627D;
     color: white;
     width: 100%;
     padding: 30px 50px;
@@ -237,7 +248,7 @@ footer img {
     }
 
     h2 {
-/*        color: #ff8839;*/
+/*        color: #3C627D;*/
         font-size: 1.25em;
     }
 
@@ -319,7 +330,7 @@ footer img {
     /*Menu Page*/
     .sub-category {
         margin: 10px 0px;
-        color: #ff8839;
+        color: #a8d275;
         font-weight: 700;
     }
 
@@ -335,7 +346,7 @@ footer img {
     }
 
     .nav-pills a {
-        color: #ff8839;
+        color: #a8d275;
         font-size: 0.875em;
     }
 
@@ -366,7 +377,7 @@ footer img {
     }
 
     h2 {
-/*        color: #ff8839;*/
+/*        color: #a8d275;*/
         font-size: 1.25em;
     }
 
