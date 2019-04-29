@@ -14,6 +14,10 @@ fieldset{
     border: none;
 }
 
+fieldset:first-child{
+    height: 60vh;
+}
+
 /* GRID */
 
 .twelve { width: 100%; }
@@ -95,8 +99,8 @@ fieldset{
 }
 
 .steps li.is-active{
-    border-bottom: 1px solid #3498db;
-    color: #3498db;
+    border-bottom: 1px solid #a8d275;
+    color: #a8d275;
 }
 
 /* FORM */
@@ -139,7 +143,7 @@ fieldset{
 }
 
 .form-wrapper .button, .form-wrapper .submit{
-    background-color: #3498db;
+    background-color: #a8d275;
     display: inline-block;
     padding: 8px 30px;
     color: #fff;

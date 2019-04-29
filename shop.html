@@ -13,6 +13,8 @@
 
         <!-- Stars -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
 
         <title>Big Skinny</title>
     </head>
@@ -20,7 +22,7 @@
     <body>
         <div id="navigation">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" width="10"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hidden-navigation" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -68,6 +70,37 @@
             <h1>Shop</h1>
 
         </div>
+        
+        <div id="screen" style="display:none"></div>
+        <div class="container" id="individual-product" style="display:none">
+            <h2>Metro Bi-Fold Wallet</h2>
+            <div class="row">
+                <div class="col-6">
+                    <img src="images/men's/metro-bifold-wallet-36.jpg">
+                    <div class="color-blocks">
+                        <div class="color-block block-color-1"></div>
+                        <div class="color-block block-color-2"></div>
+                        <div class="color-block block-color-3"></div>
+                        <div class="color-block block-color-4"></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque egestas congue quisque egestas. Magnis dis parturient montes nascetur. Sit amet nulla facilisi morbi. Rhoncus mattis rhoncus urna neque viverra justo. Nunc</h4>
+                    <br>
+                    
+                    Quantity
+                    <br>
+                    <button onclick="MinusQuantity()">-</button>
+                    <input id="productQuantity" value="1" readonly>
+                    <button onclick="AddQuantity()">+</button>
+                    <br>
+                </div>
+            </div>
+            <div class="button-row">
+                <button class="button" onclick="$('#screen').hide(); $('#individual-product').hide()">Back to Wallets</button>
+                <a class="button" href="buy.html">Add to Cart</a>
+            </div>
+        </div>
 
         <div class="container">
             <div class="content">
@@ -82,7 +115,7 @@
                     <div class="col-12 col-sm-10">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-men" role="tabpanel" aria-labelledby="v-pills-men-tab">
-                                <div id="content">
+                                <div id="content shop-products">
                                     <h2>Men's Wallet</h2>
                                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque egestas congue quisque egestas. Magnis dis parturient montes nascetur. Sit amet nulla facilisi morbi. Rhoncus mattis rhoncus urna neque viverra justo. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis.</h4>
                                     <div class="sub-category">
@@ -90,6 +123,7 @@
                                         <div class="sub-category-item">
                                             <div class="row">
                                                 <div class="col-xs-12 col-md-4">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
                                                     <img src="images/men's/metro-bifold-wallet-36.jpg">
                                                     <b>Metro Bi-Fold</b>
                                                     <p>
@@ -106,9 +140,11 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
 
                                                 <div class="col-xs-12 col-md-4">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
                                                     <img src="images/men's/rfid-blocking-bi-fold-28.jpg">
                                                     <b>Rfid Blocking Bi-Fold</b>
                                                     <p>
@@ -125,9 +161,11 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
 
                                                 <div class="col-xs-12 col-md-4">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
                                                     <img src="images/men's/mwallet4.png">
                                                     <b>The Hipster Bi-Fold</b>
                                                     <p>
@@ -144,6 +182,7 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -153,6 +192,7 @@
                                         <div class="sub-category-item">
                                             <div class="row">
                                                 <div class="col-xs-12 col-md-4">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
                                                     <img src="images/men's/mwallet1.png">
                                                     <b>Sleek Tri-Fold</b>
                                                     <p>
@@ -169,9 +209,11 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
 
                                                 <div class="col-xs-12 col-md-4">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
                                                     <img src="images/men's/mwallet2.png">
                                                     <b>Stretchy Tri-Fold</b>
                                                     <p>
@@ -188,9 +230,11 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
 
                                                 <div class="col-xs-12 col-md-4">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
                                                     <img src="images/men's/mwallet3.png">
                                                     <b>Curved Tri-Fold</b>
                                                     <p>
@@ -207,6 +251,7 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -216,6 +261,7 @@
                                         <div class="sub-category-item">
                                             <div class="row">
                                                 <div class="col-xs-12 col-md-4">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
                                                     <img src="images/men's/the-hipster-bifold-230.jpg">
                                                     <b>RFID 1</b>
                                                     <p>
@@ -232,9 +278,11 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
 
                                                 <div class="col-xs-12 col-md-4">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
                                                     <img src="images/men's/plus-sized-myphone-wallet-387.jpg">
                                                     <b>RFID 2</b>
                                                     <p>
@@ -251,9 +299,11 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
 
                                                 <div class="col-xs-12 col-md-4">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
                                                     <img src="images/men's/rfid-blocking-nylon-slimvelope-121.jpg">
                                                     <b>RFID 3</b>
                                                     <p>
@@ -270,6 +320,7 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -279,6 +330,7 @@
                                         <div class="sub-category-item">
                                             <div class="row">
                                                 <div class="col-xs-12 col-md-4">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
                                                     <img src="images/men's/panther-clutch-90.jpg">
                                                     <b>Traveller's 1</b>
                                                     <p>
@@ -295,9 +347,11 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
 
                                                 <div class="col-xs-12 col-md-4">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
                                                     <img src="images/men's/mwallet5.png">
                                                     <b>Traveller's 2</b>
                                                     <p>
@@ -314,10 +368,12 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
 
                                                 <div class="col-xs-12 col-md-4">
-                                                    <img src="images/men's/mwallet5.png">
+                                                    <button onclick="$('#screen').show(); $('#individual-product').show()">
+                                                    <img src="images/men's/mwallet5.png" onclick="$('screen').show(); $('individual-product').show()">
                                                     <b>Stretchy Bi-Fold</b>
                                                     <p>
                                                         $20.00 &emsp;
@@ -333,6 +389,7 @@
                                                         <div class="color-block block-color-3"></div>
                                                         <div class="color-block block-color-4"></div>
                                                     </div>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
